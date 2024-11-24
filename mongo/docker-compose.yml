@@ -1,0 +1,13 @@
+services:
+  python-app:
+    image: bs-data  # Base Python image
+    container_name: heatmap-data
+    working_dir: /app
+    volumes:
+      - /c/Users/user/Desktop/heatmount:/data
+    environment:
+      - MONGO_URI=mongodb://host.docker.internal:27017
+      - DATABASE_NAME=blacksky-archive
+      - COLLECTION_NAME=features
+      - FOLDER_PATH=/data
+
