@@ -1,0 +1,8 @@
+numpy
+pandas
+datetime
+geopandas
+shapely
+folium
+ipywidgets
+jupyter
